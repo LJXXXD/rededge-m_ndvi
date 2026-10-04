@@ -7,7 +7,7 @@ import numpy as np
 from .functions import sort_key
 
 
-    class RedEdgeDataset(Dataset):
+class RedEdgeDataset(Dataset):
     def __init__(self, data_dir, transform=None):
         self.band_names = ["blue", "green", "red", "near_ir", "red_edge"]
         self.data_dir = data_dir
